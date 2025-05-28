@@ -463,6 +463,40 @@ h4 {
   color: white;
   transition: all 0.4s ease;
 }
+.secondary {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  position: relative;
+}
+.secondary svg {
+  width: 50px;
+  height: 50px;
+  fill: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.secondary svg:hover {
+  fill: var(--light-blue);
+  width: 52px;
+  height: 52px;
+}
+.secondary-body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--grey-color);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
 
 @media (max-width: 700px) {
   .button-wrapper > button {
